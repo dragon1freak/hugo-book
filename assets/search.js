@@ -20,6 +20,10 @@
       {
         name: 'content',
         weight: 0.3
+      },
+      {
+        name: "tags",
+        weight: 0.3
       }
     ]
   });
@@ -74,6 +78,7 @@
       .then(pages => pages.json())
       .then(pages => {
         window.bookSearchIndex = new Fuse(pages, indexConfig);
+        console.log(pages)
       })
       .then(() => input.required = false)
       .then(search);
