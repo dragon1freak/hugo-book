@@ -1,4 +1,11 @@
-# Hugo Book Theme
+# Hugo Book Theme (Modified)
+
+Modified version of the Hugo Book theme including, but not limited to, changes like:
+- Added tags to the search data
+- Landing page is centered
+- Dont show the page title in mobile formats, rely on H1 for the page
+- Slightly wider content region
+- and more
 
 [![Hugo](https://img.shields.io/badge/hugo-0.146-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
