@@ -1,6 +1,6 @@
 {{- /* remove whitespace */ -}}
 {{- if .Get "href" -}}
-<a class="book-card{{ with .Get "class" }} {{ . }}{{ end }}"{{ with .Get "href" }} href="{{ . | relURL }}"{{ end }}>
+<a class="book-card{{ with .Get "class" }} {{ . }}{{ end }}"{{ with .Get "href" }} href="{{ . | relURL }}"{{ end }} {{with .Get "target"}} target="{{ . }}"  {{ end }}>
 {{- template "book-card-content" . -}}
 </a>
 {{- else -}}
